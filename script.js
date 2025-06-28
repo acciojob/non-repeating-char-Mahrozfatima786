@@ -4,5 +4,5 @@ function firstNonRepeatedChar(str) {
         return obj.indexOf(character) === obj.lastIndexOf(character);
     }).shift();
 }
-const input = prompt("Enter a string");
+const input = prompt("aabbcdd");
 alert(firstNonRepeatedChar(input)); 
