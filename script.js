@@ -1,8 +1,13 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	return str.split('').filter(function (character, index, obj) {
-        return obj.indexOf(character) === obj.lastIndexOf(character);
-    }).shift();
+    for (var i = 0; i < string.length; i++) {
+        var c = string.charAt(i);
+        if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+            return c;
+        }
+    }
+    return null;
+	
 }
 const input = prompt("aabbcc");
 alert(firstNonRepeatedChar(input)); 
